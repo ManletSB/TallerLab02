@@ -29,7 +29,6 @@ public class Arreglo01 {
         return myArr;
     }
 
-
     public static int guardarParesAdyacentes(int[] myArr){
 
         int[] myArr2 = generarArreglo(myArr.length-1);
