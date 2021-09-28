@@ -14,7 +14,22 @@ public class Arreglo02 {
         System.out.println("----------------------------------------");
     }
 
-   
+
+
+    public static int mayorProductoAdyacentes(int[] myArr) {
+
+        int mayor = myArr[0] * myArr[1];
+
+        for (int i = 2; i < myArr.length; i++) {
+
+            int temporal = myArr[i-1] * myArr[i];
+
+            if (temporal > mayor) {
+                mayor = temporal;
+            }
+        }
+        return mayor;
+    }
 
 
 }
