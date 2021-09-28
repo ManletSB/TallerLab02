@@ -1,7 +1,7 @@
 public class Arreglo02 {
     public static void main(String[] args) {
 
-        
+
     }
 
     public static void mostrarMenu() {
@@ -13,6 +13,8 @@ public class Arreglo02 {
         System.out.println("[3] Salir ");
         System.out.println("----------------------------------------");
     }
+
+   
 
 
 }
