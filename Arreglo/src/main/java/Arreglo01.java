@@ -13,7 +13,7 @@ public class Arreglo01 {
 
     public static int[] generarArreglo(int largo){
 
-        if(largo <= 0){
+        if(largo < 2 || largo > 10){
             return null;
         }
 
@@ -29,38 +29,11 @@ public class Arreglo01 {
         return myArr;
     }
 
-    public static int guardarParesAdyacentes(int[] myArr){
-
-        int[] myArr2 = generarArreglo(myArr.length-1);
-        myArr2 = copiarArreglo(myArr, myArr2);
-
-
-    }
-
-    public static int[] copiarArreglo(int[] myArr, int[] myArr2){
-
-        if(myArr2.length > myArr.length) {
-            return null;
+    public static void mostrarParesAdyacentes(int[] myArr) {
+        System.out.println("Los pares adyacentes son: ");
+        for (int i = 1; i < myArr.length; i++) {
+            System.out.println("(" + myArr[i-1] +","+myArr[i]+")");
         }
-
-        for (int i = 0; i < myArr2.length; i++) {
-            myArr2[i] = myArr[i];
-        }
-
-        return myArr2;
-    }
-
-    //Creamos otro arreglo para poder tener la contabilidad de los pares
-
-    public static void mostrarParesAdyacentes(int[] myArr){
-
-        int[] myArr2 = generarArreglo(myArr.length-1);
-        myArr2 = copiarArreglo(myArr, myArr2);
-
-        for(int i = 0; i < myArr2.length; i++){
-
-        }
-
     }
 
 }
